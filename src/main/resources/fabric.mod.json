@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "hatsnhappiness",
+	"version": "${version}",
+	"name": "Hats'n'Happiness",
+	"description": "A Serverside/Client mod to add Hats and other craftable cosmetics to the game. Perfect for SMP's (THIS MEANS YOU DOOD)",
+	"authors": [
+		"Areth"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hatsnhappiness/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.areth.hatsnhappiness.HatsnHappiness"
+
+		],
+		"client": [
+			"com.areth.hatsnhappiness.HatsnHappinessClient"
+
+		],
+		"fabric-datagen": [
+			"com.areth.hatsnhappiness.HatsnHappinessDataGenerator"
+		]
+	},
+	"mixins": [
+		"hatsnhappiness.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
